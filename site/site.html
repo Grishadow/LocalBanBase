@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>GMDD!</title>
+        <link rel="stylesheet" type="text/css" href="siteStyle.css"/>
+        <script src="script.js" defer>  </script>
+    </head>
+    <body>
+        <div>
+            <header>                
+            <p><h1>LocalBanBase</h1></p>
+            </header>
+                <nav>
+               <a href="list.html">Перейти к базе</a>
+            </nav>
+            <main>
+            <p><h3>Сайт проекта "LocalBanBase", цель которого - сортировка и сбор забаненных</h3></p>
+            <p><h3>людей(чаще в чате по причине неподобающего поведения или неадекватности
+                забаненного) с помощью файла JSON, хранящегося локально.
+
+            </h3></p>
+            <p></p>
+            <div class="Form">
+            <form method="get" id="formUser" autocomplete="off">
+                <fieldset>
+                <p><input required type="text" id="nameOfBanned" placeholder="Имя забаненного" maxlength="15"/></p>
+
+                <p><input required type="text" id = "Username" placeholder="Юз забаненного" maxlength="30"/></p>
+
+
+                <p><select form="reason"  id="otherr" required>
+                    <option value="Андерейдж(UnderAge)">андерейдж</option>
+                    <option value="Неадекватное поведение(абсурд, неуместные темы и т.д)">Неадекватное поведение(абсурд, неуместные темы и т.д)</option>
+                    <option value="Тупой">Тупой</option>
+                    <option value="Политик">Политик</option>
+                    <option value="другое(указано в комментарие)">другое(указывать в комментарие)</option>
+                </select></p>
+                <p>Файл базы забаненных JSON<input type="file" id ="JSON" accept = ".json"></p> <h5>создать новый файл базы?</h5><input type="checkbox" id="isNew" />
+                <p><input type="text" id = "nameOfNewBase" placeholder="имя новой базы JSON"/></p>
+                
+
+                <p>Ваш комментарий(не более 200 символов):</p>
+                    <textarea maxlength="200" id="comment"> </textarea>
+
+                <p>Степень осложнения по 10 бальной шкале: <input id="rate" type="range" min="1" max="10" size="18"></p>
+                </fieldset>
+            </form>
+            <p>
+                <button id="butsumb">Внести</button>
+            </p>
+            </div>
+            <p></p>
+            </main>
+            <p><h1>первый пет-проект</h1></p>
+        </div>
+        
+    </body>
+</html>

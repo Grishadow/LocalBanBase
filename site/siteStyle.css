@@ -1,0 +1,142 @@
+td{
+    width: 60px; 
+    height:60px; 
+    border: solid 1px silver; 
+    text-align:center;
+}
+:any-link{
+    color:rgb(146, 11, 11) ;
+    text-decoration: none;
+    font-size:larger;
+}
+textarea{
+    max-width: 200px;
+    max-height: 200px;
+    min-width: 50px;
+    min-height: 50px;
+}
+fieldset{
+    width: 30%;
+    border-color:rgb(240, 35, 35);
+    background-color: rgba(0, 0, 0, 0.567);
+    border-radius: 30px;
+    color:white;
+}
+body{
+    margin:100px 200px;
+    color:aliceblue;
+}
+main{
+    height: 60%;
+}
+html{
+    background-image: radial-gradient(ellipse farthest-side, rgb(126, 29, 29), rgb(0, 0, 0));
+    background-position: 0;
+    background-repeat:no-repeat;
+    background-color: rgb(0, 0, 0);
+    margin: 0;
+    font-family: BoundedR;
+    
+    transition-property: background-position;
+    transition-duration: 2s;
+}
+html:hover{
+    background-position: 500px;
+}
+::selection{
+    border-color: aqua;
+    background-color: rgb(91, 80, 80);
+}
+.Form{
+    text-align: left;
+    margin-left: 60%;
+    margin-right: 10%;
+    color:black
+}
+.flex-container{
+    flex-wrap: wrap;
+    display: flex;
+    background: 
+    linear-gradient(to right, #aa2020, #51166c) border-box;
+    background: 
+    linear-gradient(to left, #aa2020, #51166c) border-box;
+    font-family: BoundedEL;
+    color: #313149;
+    padding: 10px;
+    border: 5px solid transparent;
+    border-radius: 15px;
+    display: inline-block;
+    margin: 75px 0;
+    padding: 5px;
+    height: 5%;
+}
+.flex-item {
+    text-align:center;
+    font-size: 1.5em;
+    padding: 0.5em;
+    color: rgb(255, 255, 255);
+    
+}
+h1{
+    margin-left: 0;
+    text-align: center;
+    font-family: BoundedBL;
+    font-size:50px;
+    background-color: #aa2020;
+    background-image: radial-gradient(ellipse,  rgb(156, 9, 9), rgb(0, 0, 0));
+    background-clip: text;
+    background-position: 0;
+    -webkit-text-fill-color: transparent;
+    transition-property: background-position;
+    transition-duration: 2s;
+}
+h1:hover{
+    background-position: screen - 30%;
+}
+
+
+nav{
+    font-family: BoundedBL;
+    text-align: center;
+}
+@font-face{
+    font-family: 'BoundedEL';
+    src: url('fonts/Bounded-ExtraLight.ttf')
+}
+@font-face{
+    font-family: 'BoundedBL';
+    src: url('fonts/Bounded-Black.ttf')
+}
+@font-face{
+    font-family: 'BoundedR';
+    src: url('fonts/Bounded-Regular.ttf')
+}
+@font-face{
+    font-family: 'BoundedV';
+    src: url('fonts/Bounded-Variable.ttf')
+}
+button{
+    background-color: black;
+    color:white;
+    font-family: BoundedEL;
+    border-radius: 5px;
+}
+input:valid{
+    border-color:rgb(26, 255, 0);
+}
+input{
+    background-color: white;
+    font-family: BoundedEL;
+    color: black;
+    border-width: 3px;
+    border-color: red;
+    border-radius: 5px;
+}
+select{
+    background-color: white;
+    font-family: BoundedEL;
+    color: black;
+    border-width: 3px;
+    border-color: rgb(26, 255, 0);
+    border-radius: 5px;
+}
